@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: Calibri;
+  font-weight: 200;
+  color: white;
+  background-color: black;
+}
+
+.code,
+.inline-code {
+  box-shadow: inset 1px 1px darkgray;
+  border: 2px solid gray;
+  background: darkgray;
+  font-family: monospace;
+}
+
+.code {
+  font-size: 24px;
+  padding: 24px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 120px;
+}
+
+.inline-code {
+  padding: 2px;
+}
+
+.quote-author {
+  text-align: right;
+  font-style: italic;
+  margin-left: auto;
+  color: blue;
+  background: none;
+}
+
+.quote-author:before {
+  content: "-";
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.slide {
+  height: 0;
+  width: 0;
+  display: none;
+  text-align: center;
+}
+
+.emoji {
+  font-size: 128px;
+  position: absolute;
+  bottom: 200px;
+  right: 200px;
+}
+.slide.visible-slide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+}
+
+.yellow-text {
+  color: #FFED1F;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.white-text {
+  color: white;
+}
+
+.blue-background {
+  background-color: blue;
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+.margin-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.absolute {
+  position: absolute;
+}
+
+img {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 48px;
+  color: blue;
+  text-align: center;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 24px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 24px;
+  background-color: rgba(0,0,0,.5);
+}
