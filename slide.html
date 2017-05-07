@@ -15,26 +15,29 @@
         <h1 style="font-size: 64px; margin-top: 120px">
           Two Problems
         </h1>
+        <h2>
+          Regular Expressions for Revolutionaries
+        </h2>
       </div>
 
       <div class="slide" style="font-size: 24px;">
         <h3 class="white-text" style="margin-top: 20vh;">
           Who's talking?
         </h3>
-        <h1 class="white-text blue-background" style-"font-size: 48px;">
+        <h2  style-"font-size: 48px;">
           Sarah Saltrick Meyer
-        </h1>
+        </h2>
 
-        <p>
+        <h4>
           Twitter: @meyerini
           <span style="font-size: 36px;">
             💁
           </span>
-        </p>
+        </h4>
 
-        <p>
+        <h4>
           BuzzFeed
-        </p>
+        </h4>
 
       </div>
 
@@ -64,7 +67,7 @@
           Now they have two problems.
         </h2>
         <p class="quote-author">
-          Jamie Zawicki
+          Jamie Zawinski, 1997
         </p>
       </div>
 
@@ -86,7 +89,7 @@
 
       <div class="slide">
         <h2 style="margin-top: 120px">
-          I was reading Douglas Crockford one day, and I saw this.
+          But that's not all that regular expressions can do.
         </h2>
       </div>
 
@@ -96,6 +99,13 @@
       <div class="slide" style="background-image: url('images/structure_of_a_comment.png'); background-size: 85%; background-position: center;">
         <div class="emoji">
           🤔
+        </div>
+      </div>
+
+      <!-- w whitespace -->
+      <div class="slide">
+        <div class="code">
+          \s( |\t|(\/(\/.*[\r\n])|(\*((\/*[^\/\*]+)|(\/*\**[^\/\*])*\/))))?
         </div>
       </div>
 
@@ -112,8 +122,54 @@
         <div class="code" style="font-size: 64px;">
           *.js
         </div>
+      </div>
+
+      <div class="slide">
+        <h2 style="margin-top: 120px">
+          Regular expressions were defined as regular sets by Stephen Cole Kleene in the 1950s.
+        </h2>
+        <div class="code" style="font-size: 64px;">
+          *.js
+        </div>
         <div class="emoji">
           😍
+        </div>
+      </div>
+
+      <div class="slide" >
+        <div style="text-align: left; width: 800px; margin-right: auto; margin-left: auto; font-size: 48px;">
+          <h3>
+            What makes a regular expression?
+          </h3>
+          <ol style="text-align: left;">
+            <li>Boolean “or”:
+              <span class="inline-code">
+                a|b
+              </span>
+            </li>
+            <li>
+            Grouping:
+              <span class="inline-code">
+                abcd|axyd
+              </span>
+              ~
+              <span class="inline-code">
+                a(bc|xy)d
+              </span>
+            </li>
+            <li>
+              Quantification:
+              <span class="inline-code">
+                a?
+              </span>
+              <span class="inline-code">
+                a*
+              </span>
+              <span class="inline-code">
+                a+
+              </span>
+            </li>
+          </ol>
         </div>
       </div>
 
@@ -224,6 +280,14 @@
 
       <div class="slide">
         <h2 style="margin-top: 120px">
+          Type-2 have something very important: a stack!
+        </h2>
+
+        <img style="max-width: 100%; padding: 10px; background-color: white;" src="images/pushdown_automaton.png">
+      </div>
+
+      <div class="slide">
+        <h2 style="margin-top: 120px">
           Type-3 grammars Regular expressions ~ finite state automaton
         </h2>
 
@@ -248,7 +312,7 @@
 
       <div class="slide">
         <h2 style="margin-top: 120px; margin-left: 200px; margin-right: 200px;">
-          MODERN REGEXP ARE NOT REGULAR EXPRESSIONS OMG OMG OMG
+          A "regex" or "regexp" is not a regular expression!
         </h2>
 
       </div>
@@ -268,7 +332,13 @@
         <h2 style="margin-top: 120px">
           What's the difference, really?
         </h2>
+        <h3> A deterministic finite automaton (equivalent to regular expressions) meets the following criteria:</h3>
 
+        <ul style="list-style: none; font-size: 24px;">
+          <li> each of its transitions is uniquely determined by its source state and input symbol, and </li>
+          <li>reading an input symbol is required for each state transition.</li>
+        </ul>
+        <h3> A "regex" does not.</h3>
       </div>
 
       <div class="slide">
@@ -298,6 +368,29 @@
           Mozilla Developer's Network
         </p>
 
+      </div>
+
+      <div class="slide">
+        <h2>
+          Cool things you could do with regular expressions
+        </h2>
+        <ul style="list-style: none; font-size: 24px;">
+          <li>
+            Validate application state
+          </li>
+          <li>
+            Write a game
+          </li>
+          <li>
+            Make web art
+          </li>
+          <li>
+            Write a chat bot
+          </li>
+          <li>
+            Learn more!
+          </li>
+        </ul>
       </div>
 
       <div class="slide">

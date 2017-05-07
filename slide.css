@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  font-family: Calibri;
+  font-family: Proxima Nova;
   font-weight: 200;
-  color: white;
-  background-color: black;
+  color: yellow;
+  background-color: red;
 }
 
 .code,
@@ -102,6 +102,15 @@ img {
   margin-top: 20px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-shadow: 2px 2px 6px grey;
+}
+
 h2 {
   font-size: 48px;
   color: blue;
@@ -118,4 +127,9 @@ p {
   margin-right: 200px;
   padding: 24px;
   background-color: rgba(0,0,0,.5);
+}
+
+.background {
+  background-color: rgba(0,0,0,.5);
+
 }
