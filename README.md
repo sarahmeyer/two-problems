@@ -1,4 +1,4 @@
-# How to CSS... and Why
+# Two Problems
 
 Once you've cloned the repo and are in the project directory:
 
